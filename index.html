@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>Fly-high Registration Form</title>
+</head>
+<body>
+
+<img src="D:\Girl Script\HTML\headerfile.jpg" alt="Fly-High Registration Form" height="450" width="1400">
+<h1><p style="font-family: courier; text-align: center;text-align:top;color:#33ccff">
+Registration Form</p></h1>   
+
+<form autocomplete="on">
+First Name: <input type="text" name="fname">
+<hr>
+Last Name: <input type="text" name="lname"><hr>
+E-mail: <input type="email" name="email"  autocomplete="off" ><hr>
+Phone NO: <input type="phone no" name="phone no"><hr>
+
+Date of Birth :  <input type="date" name="bday"><hr>
+
+Gender : 
+ <input type="radio" name="gender" value="male" >
+ Male
+ <input type="radio" name="gender" value="female">
+ Female
+ <input type="radio" name="gender" value="other" >
+ other<br>
+
+<hr>
+City :
+  <select name="city"><br>
+    <option> -- Select City --</option>
+    <option value="amravati">Amravati</option>
+    <option value="bhopal">Bhopal</option>
+	<option value="Chandrapur">Chandrapur</option>
+	<option value="Nagpur">Nagpur</option>
+	<option value="delhi">Delhi</option>
+  	<option value="hedrabad">Hedrabad</option>
+   	<option value="Bhandara">Bhandara</option>
+   	<option value="Satara"> Satara</option>
+   	<option value="Pune">Pune"</option>
+   	<option value="Chhindwara">Chhindwara"</option>
+ </select>
+<hr>
+
+Click the button to get your coordinates.
+
+<button onclick="getLocation()">Location </button>
+
+<p id="demo"></p>
+
+<script>
+	var x = document.getElementById("demo");
+
+	function getLocation() {
+	  if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(showPosition);
+	  } else {
+	    x.innerHTML = "Geolocation is not supported by this browser.";
+	  }
+	}
+
+	function showPosition(position) {
+	  x.innerHTML = "Latitude: " + position.coords.latitude +
+	  "<br>Longitude: " + position.coords.longitude;
+	}
+</script>
+
+
+Cources : 
+	
+  	<input type="checkbox" name="cources" value="subject"> HTML 
+  	<input type="checkbox" name="cources" value="subject"> CSS
+  	<input type="checkbox" name="cources" value="subject"> C++<br>
+  	<input type="checkbox" name="cources" value="subject"> JAVASCRIPT
+ 	<input type="checkbox" name="cources" value="subject"> PYTHON
+ 	<input type="checkbox" name="cources" value="subject"> MSCIT<br>
+	<input type="checkbox" name="cources" value="subject"> PHOTOSHOP
+	<input type="checkbox" name="cources" value="subject"> ELLUSTRATAR
+	<input type="checkbox" name="cources" value="subject"> ANGULAR JS
+
+<input type="submit" name="Submit" value= "submit"><br>
+</form>
+<p  style="float: left;">
+ Michael Jeffrey Jordan is a professional American basketball player,<br> 
+  Olympic athlete, businessperson and actor. Considered one of the best <br> 
+  basketball players ever, he dominated the sport from the mid-1980s to the late 1990s.<br>  
+
+Jordan led the Chicago Bulls to six National Basketball Association championships<br> 
+ and earned the NBA's Most Valuable Player Award five times. With five regular-season<br> 
+ s MVPs and three All-Star MVPs, Jordan became the most decorated player in the NBA.</p>
+
+
+    <iframe width="420" height="240" style="border-top-right-radius: "src="https://www.youtube.com/embed/PofxohNMza0"></iframe>
+
+ <address>
+  Sai Vandana Apartment,<br>
+  vaibhav Apartment.<br>
+  Near BeltarodiRd,<br>
+  Ramtek Nagar,NAgpur<br>
+  Maharashtra 440027<br>
+</address>
+
+<object width="30%" height="300px" style=float: right data="girlscript.html"></object>
+
+</body>
+</html>
